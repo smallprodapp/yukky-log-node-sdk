@@ -1,5 +1,15 @@
 import https from 'https';
-import { Log, FullLog } from './types/entities';
+
+export interface Log {
+  name: string;
+  tags?: string[];
+  desc?: string;
+  infos?: any;
+}
+
+export interface FullLog extends Log {
+  type: string;
+}
 
 const request = (d: any) =>
   new Promise((resolve, reject) => {
