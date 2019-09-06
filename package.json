@@ -1,30 +1,36 @@
 {
-    "name": "yukky-log-node-sdk",
-    "version": "0.0.1",
-    "main": "index.js",
-    "description": "Yukky Log NodeJS SDK",
-    "keywords": [
-        "sdk",
-        "yukky",
-        "yukky log"
-    ],
-    "homepage": "https://log.yukkyapp.com",
-    "bugs": "https://github.com/smallprodapp/yukky-log-node-sdk/issues",
-    "license": "MIT",
-    "author": {
-        "name": "Yukky staff",
-        "email": "support@yukkyapp.com",
-        "url": "https://yukkyapp.com"
-    },
-    "devDependencies": {
-        "prettier": "^1.18.2",
-        "ts-loader": "^6.0.4",
-        "tslint": "^5.19.0",
-        "tslint-config-airbnb": "^5.11.1",
-        "tslint-config-prettier": "^1.18.0",
-        "tslint-plugin-prettier": "^2.0.1",
-        "typescript": "^3.6.2",
-        "webpack": "^4.39.3",
-        "webpack-cli": "^3.3.8"
-    }
+  "name": "@smallprod/yukky-log-node-sdk",
+  "version": "0.0.2",
+  "main": "index.js",
+  "description": "Yukky Log NodeJS SDK",
+  "keywords": [
+    "sdk",
+    "yukky",
+    "yukky log"
+  ],
+  "homepage": "https://log.yukkyapp.com",
+  "bugs": {
+    "url": "https://github.com/smallprodapp/yukky-log-node-sdk/issues"
+  },
+  "license": "MIT",
+  "author": "Yukky staff <support@yukkyapp.com> (https://yukkyapp.com)",
+  "devDependencies": {
+    "@types/node": "^12.7.4",
+    "prettier": "^1.18.2",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.19.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smallprodapp/yukky-log-node-sdk.git"
+  }
 }
