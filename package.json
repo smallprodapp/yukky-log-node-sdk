@@ -1,6 +1,6 @@
 {
   "name": "@smallprod/yukky-log-node-sdk",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "Yukky Log NodeJS SDK",
@@ -33,8 +33,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/smallprodapp/yukky-log-node-sdk.git"
-  },
-  "dependencies": {
-    "@smallprod/yukky-log-node-sdk": "^0.0.2"
   }
 }
