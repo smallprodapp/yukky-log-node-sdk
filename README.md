@@ -23,6 +23,8 @@ yukkylog.init('<appkey>', '<appsecret>');
 
 This will initialize the SDK.
 
+You can add a third parameter to specify if you want the debug mode.
+
 ## Send some logs
 
 ### Error

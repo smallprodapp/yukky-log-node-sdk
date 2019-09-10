@@ -69,9 +69,11 @@ var request = function (d) {
 var YukkyLog = (function () {
     function YukkyLog() {
     }
-    YukkyLog.init = function (appkey, appsecret) {
+    YukkyLog.init = function (appkey, appsecret, debug) {
+        if (debug === void 0) { debug = false; }
         YukkyLog.appkey = appkey;
         YukkyLog.appsecret = appsecret;
+        YukkyLog.debug = debug;
     };
     YukkyLog.error = function (data) { return __awaiter(void 0, void 0, void 0, function () {
         var d, err_1;
@@ -82,7 +84,7 @@ var YukkyLog = (function () {
                     d = {
                         appkey: YukkyLog.appkey,
                         appsecret: YukkyLog.appsecret,
-                        event: {
+                        log: {
                             name: data.name,
                             tags: data.tags || [],
                             type: 'error',
@@ -96,6 +98,9 @@ var YukkyLog = (function () {
                     return [3, 3];
                 case 2:
                     err_1 = _a.sent();
+                    if (YukkyLog.debug) {
+                        console.log(err_1);
+                    }
                     return [3, 3];
                 case 3: return [2];
             }
@@ -110,7 +115,7 @@ var YukkyLog = (function () {
                     d = {
                         appkey: YukkyLog.appkey,
                         appsecret: YukkyLog.appsecret,
-                        event: {
+                        log: {
                             name: data.name,
                             tags: data.tags || [],
                             type: 'warning',
@@ -124,6 +129,9 @@ var YukkyLog = (function () {
                     return [3, 3];
                 case 2:
                     err_2 = _a.sent();
+                    if (YukkyLog.debug) {
+                        console.log(err_2);
+                    }
                     return [3, 3];
                 case 3: return [2];
             }
@@ -138,7 +146,7 @@ var YukkyLog = (function () {
                     d = {
                         appkey: YukkyLog.appkey,
                         appsecret: YukkyLog.appsecret,
-                        event: {
+                        log: {
                             name: data.name,
                             tags: data.tags || [],
                             type: 'info',
@@ -152,6 +160,9 @@ var YukkyLog = (function () {
                     return [3, 3];
                 case 2:
                     err_3 = _a.sent();
+                    if (YukkyLog.debug) {
+                        console.log(err_3);
+                    }
                     return [3, 3];
                 case 3: return [2];
             }
@@ -166,7 +177,7 @@ var YukkyLog = (function () {
                     d = {
                         appkey: YukkyLog.appkey,
                         appsecret: YukkyLog.appsecret,
-                        event: {
+                        log: {
                             name: data.name,
                             tags: data.tags || [],
                             type: data.type,
@@ -180,6 +191,9 @@ var YukkyLog = (function () {
                     return [3, 3];
                 case 2:
                     err_4 = _a.sent();
+                    if (YukkyLog.debug) {
+                        console.log(err_4);
+                    }
                     return [3, 3];
                 case 3: return [2];
             }

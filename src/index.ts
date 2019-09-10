@@ -40,10 +40,12 @@ const request = (d: any) =>
 export default class YukkyLog {
   static appkey: string;
   static appsecret: string;
+  static debug: boolean;
 
-  static init = (appkey: string, appsecret: string) => {
+  static init = (appkey: string, appsecret: string, debug: boolean = false) => {
     YukkyLog.appkey = appkey;
     YukkyLog.appsecret = appsecret;
+    YukkyLog.debug = debug;
   };
 
   static error = async (data: Log) => {
@@ -51,7 +53,7 @@ export default class YukkyLog {
       const d = {
         appkey: YukkyLog.appkey,
         appsecret: YukkyLog.appsecret,
-        event: {
+        log: {
           name: data.name,
           tags: data.tags || [],
           type: 'error',
@@ -61,7 +63,9 @@ export default class YukkyLog {
       };
       await request(d);
     } catch (err) {
-      // DO nothing
+      if (YukkyLog.debug) {
+        console.log(err);
+      }
     }
   };
 
@@ -70,7 +74,7 @@ export default class YukkyLog {
       const d = {
         appkey: YukkyLog.appkey,
         appsecret: YukkyLog.appsecret,
-        event: {
+        log: {
           name: data.name,
           tags: data.tags || [],
           type: 'warning',
@@ -80,7 +84,9 @@ export default class YukkyLog {
       };
       await request(d);
     } catch (err) {
-      // DO nothing
+      if (YukkyLog.debug) {
+        console.log(err);
+      }
     }
   };
 
@@ -89,7 +95,7 @@ export default class YukkyLog {
       const d = {
         appkey: YukkyLog.appkey,
         appsecret: YukkyLog.appsecret,
-        event: {
+        log: {
           name: data.name,
           tags: data.tags || [],
           type: 'info',
@@ -99,7 +105,9 @@ export default class YukkyLog {
       };
       await request(d);
     } catch (err) {
-      // DO nothing
+      if (YukkyLog.debug) {
+        console.log(err);
+      }
     }
   };
 
@@ -108,7 +116,7 @@ export default class YukkyLog {
       const d = {
         appkey: YukkyLog.appkey,
         appsecret: YukkyLog.appsecret,
-        event: {
+        log: {
           name: data.name,
           tags: data.tags || [],
           type: data.type,
@@ -118,7 +126,9 @@ export default class YukkyLog {
       };
       await request(d);
     } catch (err) {
-      // DO nothing
+      if (YukkyLog.debug) {
+        console.log(err);
+      }
     }
   };
 }

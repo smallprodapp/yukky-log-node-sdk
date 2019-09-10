@@ -10,7 +10,8 @@ export interface FullLog extends Log {
 export default class YukkyLog {
     static appkey: string;
     static appsecret: string;
-    static init: (appkey: string, appsecret: string) => void;
+    static debug: boolean;
+    static init: (appkey: string, appsecret: string, debug?: boolean) => void;
     static error: (data: Log) => Promise<void>;
     static warning: (data: Log) => Promise<void>;
     static info: (data: Log) => Promise<void>;
