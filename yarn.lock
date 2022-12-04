@@ -37,11 +37,6 @@
     reflect-metadata "^0.1.12"
     tslib "^1.8.1"
 
-"@smallprod/yukky-log-node-sdk@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@smallprod/yukky-log-node-sdk/-/yukky-log-node-sdk-0.0.2.tgz#c055cb6b384e71936b83a040ea3edda27e49df90"
-  integrity sha512-6Bii62rqetWGhAMr7Q8PR1mKgsaNavquyVdv93v4j0KlHL5+WXZ7Q9GS/VFngxVHUXDPT0f6SmxH0NWMkb1PDw==
-
 "@types/node@^12.7.4":
   version "12.7.4"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.4.tgz#64db61e0359eb5a8d99b55e05c729f130a678b04"
@@ -793,9 +788,9 @@ decamelize@^1.2.0:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-extend@^0.6.0:
   version "0.6.0"
